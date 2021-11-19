@@ -101,6 +101,15 @@ $(".mod").click(function(event){
 
   let answer= modulo(input1,input2);
 
+  if(Number1 ==="" || Number2 === "")
+  {
+    $("#total").text("Input number");
+  }
+
+  $(".add").click(function(){
+    const answer = add(Number1,Number2);
+  })
+
   $("#total").text(answer);
 });
 
