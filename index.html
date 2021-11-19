@@ -11,25 +11,23 @@
   <title>An Arithmetic Calculator</title>
 </head>
 <body class="bg-info">
-  <div class="container">
+  <div class="container col-md-6">
     <h1 class="text-danger">Calculator</h1>
-    <form class="calculator">
+    <form id="calculator">
       <div class="form-group">
         <label class="number">Number1</label>
-        <input type="number" id="number1">
+        <input type="number" id="number1" class="form-control">
       </div>
       <div class="form-group">
         <label class="number">Number2</label>
-        <input type="number" id="number2">
+        <input type="number" id="number2"  class="form-control">
       </div>
 
-      <div>
-        <input type="button" value="ADD" class="add">
-        <input type="button" value="SUB" class="sub">
-        <input type="button" value="DIV" class="div">
-        <input type="button" value="MUL" class="mul">
-        <input type="button" value="MOD" class="mod">
-      </div>
+        <button type="submit" class="btn btn-primary" id="add"> + </button>
+        <button type="submit" class="btn btn-warning" id="sub"> - </button>
+        <button type="submit" class="btn btn-success" id="multiply"> * </button>
+        <button type="submit" class="btn btn-dark" id="divide"> / </button>
+        <button type="submit" class="btn btn-danger" id="modulo"> % </button>
     </form>
     <div id="total"></div>
   </div>
